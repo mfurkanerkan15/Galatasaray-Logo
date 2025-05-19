@@ -2,7 +2,7 @@ import turtle
 
 t = turtle.Turtle()
 window = turtle.Screen()
-window.setup(width=600, height=650)
+window.setup(width=900, height=850)
 window.title("Galatasaray Logo")
 window.bgcolor("white")
 
@@ -130,7 +130,22 @@ for i in range(5):
     t.forward(20)
     t.left(-144)
 t.end_fill()
-t.up()
-t.goto(800,80)
 
+# 5. yıldız
+t.up()
+t.goto(-10, 280)
+t.down()
+t.pencolor("#fdb912")
+t.begin_fill()
+t.fillcolor("#fdb912")
+t.left(-43)
+for i in range(5):
+    t.forward(20)
+    t.left(72)
+    t.forward(20)
+    t.left(-144)
+t.end_fill()
+
+t.up()
+t.goto(0,9000)
 window.exitonclick()
